@@ -11,8 +11,8 @@ function quadraticEquation(a, b, c){
     try{
         let discriminant = Math.sqrt(b**2 - 4*a*c)
         if(discriminant>=0){
-            let sol1 = (-b + Math.sqrt(b**2 - 4*a*c))/(2*a)
-            let sol2 = (-b - Math.sqrt(b**2 - 4*a*c))/(2*a)
+            let sol1 = ((-b + Math.sqrt(b**2 - 4*a*c))/(2*a)).toFixed(10)
+            let sol2 = ((-b - Math.sqrt(b**2 - 4*a*c))/(2*a)).toFixed(10)
             if(sol1==sol2){
                 results.textContent =  `There is one solution: ${sol1}`
             }else{
