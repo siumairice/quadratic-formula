@@ -9,13 +9,18 @@ calculate.addEventListener("click", ()=>{
 function quadraticEquation(a, b, c){
     let results = document.getElementById("res")
     try{
-        let sol1 = (-b + Math.sqrt(b**2 - 4*a*c))/(2*a)
-        let sol2 = (-b - Math.sqrt(b**2 - 4*a*c))/(2*a)
-        if(sol1==sol2){
-            results.textContent =  `There is one solution: ${sol1}`
+        let discriminant = Math.sqrt(b**2 - 4*a*c)
+        if(discriminant>=0){
+            let sol1 = (-b + Math.sqrt(b**2 - 4*a*c))/(2*a)
+            let sol2 = (-b - Math.sqrt(b**2 - 4*a*c))/(2*a)
+            if(sol1==sol2){
+                results.textContent =  `There is one solution: ${sol1}`
+            }else{
+                results.textContent =  `There are two solutions: ${sol1} and ${sol2}`
+            }
         }else{
-            results.textContent =  `There are two solutions: ${sol1} and ${sol2}`
-        }
+            results.textContent =  "No solutions."
+        } 
     }catch{
         results.textContent =  "No solutions."
     }

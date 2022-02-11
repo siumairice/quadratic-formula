@@ -52,6 +52,7 @@ button{
 
 button:hover{
     opacity: 70%;
+    padding: 0.5vh;
 }
 .parameters{
     display: flex;
@@ -99,7 +100,7 @@ img{
     align-items: center;
 }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 80vh) {
     .parameters{
         width: 75%;
     }
