@@ -1,0 +1,121 @@
+*{
+    color: hsl(183, 100%, 15%);
+    border-radius: 1vh;
+    border: 0px solid red;
+    margin: 0;
+    font-family: 'Red Hat Display';
+}
+
+body {
+    background-color: hsl(185, 41%, 84%);
+
+}
+
+h1{
+    width: 60vh;
+    margin: 10vh auto;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Big Shoulders Display';
+}
+
+h2{
+   font-weight: 900; 
+    font-size: 3vh;
+}
+
+h3{
+    font-size: 2.5vh;
+}
+label{
+    font-size: 3vh;
+    font-weight: bolder;
+}
+
+input{
+    height: 2.5vh;
+    background-color: hsl(235, 35%, 93%);
+    padding: 0.7vh;
+    width: 25vh;
+    margin-top: 0.7vh;
+}
+input:hover{
+    border: 1px solid hsl(183, 100%, 15%);
+}
+
+button{
+    width: 100%;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+    padding: 0.5vh;
+}
+
+button:hover{
+    opacity: 70%;
+}
+.parameters{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: aliceblue;
+    width: 80vh;
+    margin: 10vh auto;
+    height: auto;
+    padding: 5vh;
+    box-sizing: border-box;
+}
+.parameters:hover{
+    box-shadow: 20px 20px 15px rgba(119, 118, 118, 0.185);
+}
+
+#results{
+    background-color:hsl(183, 100%, 15%);
+    width: 40%;
+    padding: 3vh;
+    box-sizing: border-box;
+}
+
+#results:hover{
+    border: 2px dashed hsl(185, 41%, 84%);
+}
+#box{
+    display: flex;
+    justify-content: space-between;
+
+}
+#res{
+    color: white;
+}
+
+img{
+    width: 25vh;
+    padding: 1vh;
+    margin: 2vh 0;
+    border: 1px dashed hsl(183, 100%, 15%);
+}
+#mini-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 475px) {
+    .parameters{
+        width: 75%;
+    }
+    #box{
+        flex-direction: column;
+    }
+    #results{
+        margin-top: 5vh;
+        width: 100%;
+    }
+    input, img{
+        width: 75%;
+    }
+}
+
+.attribution{
+    text-align: center;
+    font-size: 2vh;
+}
